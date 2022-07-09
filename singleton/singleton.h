@@ -4,7 +4,7 @@
 class Singleton
 {
 public:
-    Singleton &GetInstance() {
+    static Singleton &GetInstance() {
         static Singleton res;
         return res;
     }
